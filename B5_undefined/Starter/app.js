@@ -1,8 +1,12 @@
-b();
+var a;
 console.log(a);
 
-var a = 'Hello World!';
+//'a = undefined' never do this.
 
-function b() {
-    console.log('Called b!');
+if (a === undefined) {
+    console.log('a is undefined');
+}
+
+else {
+    console.log('a is defined');
 }
